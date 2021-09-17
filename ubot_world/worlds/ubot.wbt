@@ -1,0 +1,246 @@
+#VRML_SIM R2020a utf8
+WorldInfo {
+  info [
+    "Simulation showing the KUKA youBot model"
+  ]
+  basicTimeStep 16
+  contactProperties [
+    ContactProperties {
+      material2 "box"
+      coulombFriction [
+        10
+      ]
+    }
+    ContactProperties {
+      material1 "InteriorWheelMat"
+      coulombFriction [
+        1.8, 0, 0.2
+      ]
+      frictionRotation -0.9648 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+    ContactProperties {
+      material1 "ExteriorWheelMat"
+      coulombFriction [
+        1.8, 0, 0.2
+      ]
+      frictionRotation 0.9648 0
+      bounce 0
+      forceDependentSlip [
+        10, 0
+      ]
+    }
+  ]
+}
+Viewpoint {
+  orientation 0.040071114139997026 -0.9584116042982352 -0.28256238701933056 3.553183168681515
+  position 0.9459609117115607 1.4244513339920803 -2.062372963941028
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 3 3
+}
+WoodenBox {
+  translation 1.75 0.25 1
+  name "wooden box(1)"
+  size 0.5 0.5 1
+  locked TRUE
+}
+WoodenBox {
+  translation 1.75 0.25 0
+  name "wooden box(2)"
+  size 0.5 0.5 1
+  locked TRUE
+}
+WoodenBox {
+  translation 1.75 0.25 -1
+  name "wooden box(3)"
+  size 0.5 0.5 1
+  locked TRUE
+}
+WoodenBox {
+  translation -1.75 0.25 1
+  name "wooden box(4)"
+  size 0.5 0.5 1
+  locked TRUE
+}
+WoodenBox {
+  translation -1.75 0.25 0
+  name "wooden box(5)"
+  size 0.5 0.5 1
+  locked TRUE
+}
+WoodenBox {
+  translation -1.75 0.25 -1
+  name "wooden box(6)"
+  size 0.5 0.5 1
+  locked TRUE
+}
+WoodenBox {
+  translation 1.5 0.25 -1.75
+  name "wooden box(7)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation 0.5 0.25 -1.75
+  name "wooden box(8)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation -0.5 0.25 -1.75
+  name "wooden box(9)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation -1.5 0.25 -1.75
+  name "wooden box(10)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation 1.5 0.25 1.75
+  name "wooden box(11)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation 0.5 0.25 1.75
+  name "wooden box(12)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation -0.5 0.25 1.75
+  name "wooden box(13)"
+  size 1 0.5 0.5
+  locked TRUE
+}
+WoodenBox {
+  translation -1.5 0.25 1.75
+  size 1 0.5 0.5
+  locked TRUE
+}
+DEF SRC_PLATFORM SolidBox {
+  translation 1 0.005 0
+  name "platform"
+  size 0.1 0.01 0.2
+  appearance PBRAppearance {
+    baseColor 0.8 0.8 0.8
+    roughness 0.5
+    metalness 0
+  }
+}
+DEF TMP_PLATFORM SolidBox {
+  translation -0.5 0.005 0.866
+  rotation 0 1 0 -2.0944
+  name "platform(1)"
+  size 0.1 0.01 0.2
+  appearance PBRAppearance {
+    baseColor 0.8 0.8 0.8
+    roughness 0.5
+    metalness 0
+  }
+}
+DEF DST_PLATFORM SolidBox {
+  translation -0.5 0.005 -0.866
+  rotation 0 1 0 2.0944
+  name "platform(2)"
+  size 0.1 0.01 0.2
+  appearance PBRAppearance {
+    baseColor 0.8 0.8 0.8
+    roughness 0.5
+    metalness 0
+  }
+}
+DEF C1 KukaBox {
+  translation 1.0000000310257637 0.03489918120776291 -0.05999852544406417
+  rotation -0.999999976891963 -0.00019742208349148377 8.509168345840675e-05 -0.0006445099013170274
+  name "Kuka box(1)"
+  color 0.12549 0.847059 0.12549
+  size 0.05 0.05 0.05
+  contactMaterial "box"
+}
+DEF C2 KukaBox {
+  translation 1.000000031852207 0.034870498121684475 3.979111201075548e-08
+  rotation 0.9999984356990764 0.001754242243763149 -0.00022634829465284116 -1.437585357989697e-05
+  name "Kuka box(2)"
+  color 0.12549 0.847059 0.12549
+  size 0.05 0.05 0.05
+  contactMaterial "box"
+}
+DEF C3 KukaBox {
+  translation 1.0000000262538242 0.03489922307460046 0.05999858530909193
+  rotation 0.9999999971373095 -4.118765991304826e-06 -7.55540661343061e-05 -0.0006261450649609464
+  name "Kuka box(3)"
+  color 0.12549 0.847059 0.12549
+  size 0.05 0.05 0.05
+  contactMaterial "box"
+}
+DEF B1 KukaBox {
+  translation 1.0000000590715161 0.08484678569154834 -0.029982316977428147
+  rotation -0.999999976066004 0.00021324269172513324 4.894431077728819e-05 -0.000541966500224382
+  name "Kuka box(4)"
+  color 0.901961 0.901961 0.0901961
+  size 0.05 0.05 0.05
+  contactMaterial "box"
+}
+DEF B2 KukaBox {
+  translation 1.0000000419954036 0.08484716004084543 0.029982461155042852
+  rotation 0.9999996774894442 -0.0008018165400415333 -4.5948271302615676e-05 -0.0005409259495756038
+  name "Kuka box(5)"
+  color 0.901961 0.901961 0.0901961
+  size 0.05 0.05 0.05
+  contactMaterial "box"
+}
+DEF A1 KukaBox {
+  translation 1.0000000419954036 0.13484716 -2.017919999776894e-06
+  rotation -1.7196425269538232e-10 0.9999999990133046 4.442286542010571e-05 -7.5516021473651365e-06
+  color 0.901961 0.0901961 0.0901961
+  size 0.05 0.05 0.05
+  contactMaterial "box"
+}
+YoubotFlag {
+  translation 1.35 0 0
+  name "youBot flag(1)"
+  locked TRUE
+}
+YoubotFlag {
+  translation -0.675 0 1.16913
+  rotation 0 1 0 -2.0944
+  name "youBot flag(2)"
+  textureURL [
+    "textures/flag_tmp.png"
+  ]
+  locked TRUE
+}
+YoubotFlag {
+  translation -0.675 0 -1.16913
+  rotation 0 1 0 2.0944
+  textureURL [
+    "textures/flag_goal.png"
+  ]
+  locked TRUE
+}
+Youbot {
+  controller "ros"
+  bodySlot [
+    Kinect {
+      translation 0.27 0 -0.02
+      rotation 0.5773502691896258 -0.5773502691896258 -0.5773502691896258 2.0944
+      foot FALSE
+    }
+    GPS {
+    }
+    Compass {
+    }
+  ]
+}
