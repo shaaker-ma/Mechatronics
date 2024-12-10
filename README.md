@@ -14,10 +14,6 @@ The primary objective of this project was to simulate the KUKA youBot—a versat
 
 - **webots_ros/**: Integrates the Webots simulator with the Robot Operating System (ROS) to facilitate robot simulation and control.
 
-- **FinalPresentation.pptx**: The final presentation detailing the project's objectives, methodologies, and outcomes.
-
-- **README.md**: Provides an overview of the project and instructions for setting up and running the simulations.
-
 ## Key Features
 
 - **Kinematic Analysis**: Detailed study and implementation of both forward and inverse kinematics for the youBot's manipulator, utilizing the Denavit-Hartenberg (D-H) convention.
