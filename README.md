@@ -1,6 +1,6 @@
 # KUKA youBot Simulation
 
-
+![Simulated KUKA](figs/Simulated_KUKA.jpg)
 
 This repository contains the code and documentation for a mechatronics project focused on simulating and controlling the KUKA youBot platform. Developed during the Summer of 2020 at the University of Tehran, this project encompasses various aspects of robotics, including kinematics, control algorithms, and practical applications.
 
