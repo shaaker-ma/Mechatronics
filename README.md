@@ -1,6 +1,6 @@
 # Mechatronics Project: KUKA youBot Simulation
 
-![KUKA youBot](https://www.researchgate.net/profile/Arash-Ghazaryan/publication/261074766/figure/fig1/AS:297842932817920@1447971552760/KUKA-youBot-an-open-source-enabled-omnidirectional-mobile-manipulator-for-research-and.png)
+
 
 This repository contains the code and documentation for a mechatronics project focused on simulating and controlling the KUKA youBot platform. Developed during the Summer of 2020 at the University of Tehran, this project encompasses various aspects of robotics, including kinematics, control algorithms, and practical applications.
 
@@ -40,3 +40,29 @@ To set up the simulation environment and run the provided code, follow these ste
 
    ```bash
    git clone https://github.com/shaaker-ma/Mechatronics.git
+
+4. **Build the Workspace:**:
+
+   ```bash
+   cd Mechatronics
+   catkin_make
+
+5. **Source the Setup File**:
+
+   ```bash
+   source devel/setup.bash
+
+6. **Launch the Simulation**:
+
+   ```bash
+   roslaunch ubot_world youbot_simulation.launch
+
+## Dependencies
+
+- ROS: Robot Operating System (tested with ROS Melodic).
+
+- Webots: Open-source robot simulator.
+
+- Python: For scripting and control algorithms.
+
+- C++: Core programming language for robot control.
