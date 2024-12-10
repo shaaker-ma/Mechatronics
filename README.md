@@ -37,7 +37,7 @@ To set up the simulation environment and run the provided code, follow these ste
 3. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/shaaker-ma/Mechatronics.git
+   git clone https://github.com/shaaker-ma/kuka-youbot-simulation.git
 
 ## Dependencies
 
