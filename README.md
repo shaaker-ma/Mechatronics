@@ -4,7 +4,7 @@
 
 This repository contains the code and documentation for a mechatronics project focused on simulating and controlling the KUKA youBot platform. Developed during the Summer of 2020 at the University of Tehran, this project encompasses various aspects of robotics, including kinematics, control algorithms, and practical applications.
 
-## Project Overview
+## Overview
 
 The primary objective of this project was to simulate the KUKA youBot—a versatile mobile manipulator combining an omnidirectional mobile base with a 5-degree-of-freedom robotic arm. The simulation aimed to explore the robot's capabilities in tasks such as object manipulation, path planning, and executing complex movements.
 
