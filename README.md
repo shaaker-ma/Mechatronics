@@ -1,4 +1,4 @@
-# Mechatronics Project: KUKA youBot Simulation
+# KUKA youBot Simulation
 
 
 
