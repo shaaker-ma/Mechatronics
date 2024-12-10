@@ -37,22 +37,6 @@ To set up the simulation environment and run the provided code, follow these ste
    ```bash
    git clone https://github.com/shaaker-ma/Mechatronics.git
 
-4. **Build the Workspace:**:
-
-   ```bash
-   cd Mechatronics
-   catkin_make
-
-5. **Source the Setup File**:
-
-   ```bash
-   source devel/setup.bash
-
-6. **Launch the Simulation**:
-
-   ```bash
-   roslaunch ubot_world youbot_simulation.launch
-
 ## Dependencies
 
 - ROS: Robot Operating System (tested with ROS Melodic).
